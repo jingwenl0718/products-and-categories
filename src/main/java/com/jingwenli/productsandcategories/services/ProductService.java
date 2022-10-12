@@ -29,7 +29,7 @@ public class ProductService {
 		return productRepo.save(product);
 	}
 	
-//	FINE ONE
+//	FIND ONE
 	public Product findOneProduct(Long id) {
 		Optional<Product> optionalProduct = productRepo.findById(id);
 		if (optionalProduct.isPresent()) {
